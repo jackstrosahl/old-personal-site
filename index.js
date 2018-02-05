@@ -6,6 +6,8 @@ c.height = window.innerHeight;
 var ctx = c.getContext("2d");
 var width = c.width;
 var height = c.height;
+var halfWidth = Math.floor(width/2);
+var halfHeight = Math.floor(height/2);
 var cells = [];
 for(var x =0;x<width;x++)
 {
@@ -15,9 +17,9 @@ for(var x =0;x<width;x++)
     cells[x][y] = 0;
   }
 }
-for(var x =0;x<8;x++)
+for(var x =halfWidth-4;x<halfWidth+4;x++)
 {
-  for(var y =0;y<8;y++)
+  for(var y =halfHeight-4;y<halfHeight+4;y++)
   {
     if(parseInt(Math.random()*2)==0) cells[x][y]=1;
   }
