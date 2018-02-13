@@ -11,33 +11,52 @@
         text-decoration: none;
         display: inline-block;
     }
-
     a:hover, a:active 
     {
         background-color: red;
     }
-		
-		* 
-		{
- 		    font-family: Arial;
- 		}
 	
-		html 
-		{
-     		 height: 100%;
-		}
+	* 
+	{
+		font-family: Arial;
+	}
+
+	html 
+	{
+		 height: 100%;
+	}
 		
- 		body 
-		{
-      height: 100%;
-      margin: 0;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-			background: linear-gradient(white, black);
-		}
+ 	body 
+	{
+		height: 100%;
+		margin: 0;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background: linear-gradient(white, black);
+	}
+	
+	.hCenter
+	{
+		display: flex;
+		justify-content: center;
+	}
+	
+	.vCenter
+	{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
 </style>
 </head>
 <body>
-    <a style="background-color:#4286f4" href = "apps/conway">Conway</a>
+	<div class="vCenter">
+		<img src="resources/senior.jpg" style="border-radius: 50%; width: 10%; height: 10%">
+		<h1  >Jack Strosahl</h1>
+		<div class="hCenter">
+			<a style="background-color:#4286f4;" href = "apps/conway">Conway's Game of Life</a>
+			<a style="background-color:#9800ff;" href = "apps/markov">Markov Chains</a>
+		</div>
+	</div>
 </body>
 </html>
